@@ -1,7 +1,7 @@
 import { extend } from 'flarum/common/extend';
 import TextEditor from 'flarum/common/components/TextEditor';
 
-import TurndownService from 'turndown';
+import TurndownService from './turndown-table.js';
 
 export default function editPaste() {
   extend(TextEditor.prototype, 'oncreate', function () {
